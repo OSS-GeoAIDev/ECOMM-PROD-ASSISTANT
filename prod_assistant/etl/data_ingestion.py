@@ -8,20 +8,45 @@ from prod_assistant.utils.model_loader import ModelLoader
 from prod_assistant.utils.config_loader import load_config
 
 class DataIngestion:
+    """
+    Class to handle data transformation and ingestion into AstraDB vector store.
+    """
     def __init__(self):
-        pass
+        """
+        Initialize environment variables, embedding model, and set CSV file path.
+        """
+        print("Initializing DataIngestion pipeline...")
     
     def _load_env_variables(self):
+        """
+        Load and validate required environment variables.
+        """ 
         pass
     
+    def _get_csv_path(self):
+        """
+        Get path to the CSV file located inside 'data' folder.
+        """
+        pass
     def _load_csv(self):
+        """
+        Load product data from CSV.
+        """
         pass
-    
     def transform_data(self):
+        """
+        Transform product data into list of LangChain Document objects.
+        """
         pass
     
     def store_in_vector_db(self):
+        """
+        Store documents into AstraDB vector store.
+        """
         pass
     
     def run_pipeline(self):
+        """
+        Run the full data ingestion pipeline: transform data and store into vector DB.
+        """
         pass
