@@ -6,6 +6,6 @@ dist/
 wheels/
 *.egg-info
 ecomm/
-
+.env
 # Virtual environments
 .venv
