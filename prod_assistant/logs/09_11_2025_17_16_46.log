@@ -1,0 +1,27 @@
+patching driver executable C:\Users\jmu8783\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+patching driver executable C:\Users\jmu8783\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+{"timestamp": "2025-09-11T14:26:48.585191Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-09-11T14:26:48.585191Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-09-11T14:26:48.585191Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_GN...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-09-11T14:26:48.586190Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-09-11T14:26:48.588192Z", "level": "info", "event": "YAML config loaded"}
+{"timestamp": "2025-09-11T14:29:19.670720Z", "level": "info", "event": "Running in LOCAL mode: .env loaded"}
+{"timestamp": "2025-09-11T14:29:19.670720Z", "level": "info", "event": "Loaded GROQ_API_KEY from individual env var"}
+{"timestamp": "2025-09-11T14:29:19.671735Z", "level": "info", "event": "Loaded GOOGLE_API_KEY from individual env var"}
+{"keys": {"GROQ_API_KEY": "gsk_GN...", "GOOGLE_API_KEY": "AIzaSy..."}, "timestamp": "2025-09-11T14:29:19.671735Z", "level": "info", "event": "API keys loaded"}
+{"config_keys": ["astra_db", "embedding_model", "retriever", "llm"], "timestamp": "2025-09-11T14:29:19.673719Z", "level": "info", "event": "YAML config loaded"}
+{"model": "models/text-embedding-004", "timestamp": "2025-09-11T14:29:19.681717Z", "level": "info", "event": "Loading embedding model"}
+vector store default init, collection 'ecomm'
+No valid keyspace found in environment variable.
+Detecting API environment 'prod' from supplied endpoint
+createCollection('ecomm')
+HTTP Request: POST https://5850580f-4b75-4b94-b25e-9d1ffb6e654b-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace "HTTP/1.1 200 OK"
+finished createCollection('ecomm')
+inserting 1 documents in 'ecomm'
+insertMany(chunk) on 'ecomm'
+HTTP Request: POST https://5850580f-4b75-4b94-b25e-9d1ffb6e654b-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/ecomm "HTTP/1.1 200 OK"
+finished insertMany(chunk) on 'ecomm'
+finished inserting 1 documents in 'ecomm'
+cursor fetching a page: (empty page state) from ecomm
+HTTP Request: POST https://5850580f-4b75-4b94-b25e-9d1ffb6e654b-us-east-2.apps.astra.datastax.com/api/json/v1/default_keyspace/ecomm "HTTP/1.1 200 OK"
+cursor finished fetching a page: (empty page state) from ecomm
