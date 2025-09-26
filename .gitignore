@@ -11,3 +11,5 @@ ecomm/
 
 # Virtual environments
 .venv
+logs/
+*.log
