@@ -16,15 +16,15 @@ spec:
     spec:
       containers:
       - name: product-assistant
-        image: 443852008496.dkr.ecr.us-east-2.amazonaws.com/product-assistant:latest
+        image: 443852008496.dkr.ecr.us-east-1.amazonaws.com/product-assistant:latest
         ports:
         - containerPort: 8000
         env:                                # ✅ Added env section
-        - name: GROQ_API_KEY
+        - name: OPENAI_API_KEY
           valueFrom:
             secretKeyRef:
               name: product-assistant-secrets
-              key: GROQ_API_KEY
+              key: OPENAI_API_KEY
         - name: GOOGLE_API_KEY
           valueFrom:
             secretKeyRef:
